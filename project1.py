@@ -1,7 +1,7 @@
 from PIL import Image
-import os
-import os.getenv('PORT','8080')
-import os.getenv('IP','0.0.0.0')
+#import os
+#import os.getenv('PORT','8080')
+#import os.getenv('IP','0.0.0.0')
 
 Pics = []
 GreenP = []
@@ -57,4 +57,4 @@ for x in range (0,width):
         RedP = []
         
         
-FinalImage.show()
+FinalImage.save("/home/ubuntu/workspace/Ana/final.png")
