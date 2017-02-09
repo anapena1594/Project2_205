@@ -1,22 +1,19 @@
 from PIL import Image
-import os
-import os.getenv('PORT','8080')
-import os.getenv('IP','0.0.0.0')
 
 Pics = []
 GreenP = []
 BlueP = []
 RedP = []
 
-Pics.append(Image.open("/home/ubuntu/workspace/Ana/1.png"))
-Pics.append(Image.open("/home/ubuntu/workspace/Ana/2.png"))
-Pics.append(Image.open("/home/ubuntu/workspace/Ana/3.png"))
-Pics.append(Image.open("/home/ubuntu/workspace/Ana/4.png"))
-Pics.append(Image.open("/home/ubuntu/workspace/Ana/5.png"))
-Pics.append(Image.open("/home/ubuntu/workspace/Ana/6.png"))
-Pics.append(Image.open("/home/ubuntu/workspace/Ana/7.png"))
-Pics.append(Image.open("/home/ubuntu/workspace/Ana/8.png"))
-Pics.append(Image.open("/home/ubuntu/workspace/Ana/9.png"))
+Pics.append(Image.open("ana-project1/Ana/1."))
+Pics.append(Image.open("ana-project1/Ana/2.png"))
+Pics.append(Image.open("ana-project1/Ana/3.png"))
+Pics.append(Image.open("ana-project1/Ana/4.png"))
+Pics.append(Image.open("ana-project1/Ana/5.png"))
+Pics.append(Image.open("ana-project1/Ana/6.png"))
+Pics.append(Image.open("ana-project1/Ana/7.png"))
+Pics.append(Image.open("ana-project1/Ana/8.png"))
+Pics.append(Image.open("ana-project1/Ana/9.png"))
 
 width,height= Pics[0].size
 
@@ -51,7 +48,7 @@ for x in range (0,width):
         NewRed = median (RedP)
             
             
-        FinalImage.putpixel((x,y),(NewRed, NewGreen, NewBlue))
+        FinalImage.putpixal((x,y),(NewRed, NewGreen, NewBlue))
         GreenP= []
         BlueP = []
         RedP = []
